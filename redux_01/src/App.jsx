@@ -1,13 +1,14 @@
-
+import Counter from "./components/Counter.jsx/Counter";
+import CounterContext from "./context/CounterContext";
 
 function App() {
-  
-
   return (
     <>
-    hello
+      <CounterContext>
+        <Counter />
+      </CounterContext>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
